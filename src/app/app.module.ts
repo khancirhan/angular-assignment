@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
@@ -12,21 +13,22 @@ import { FollowersComponent } from './components/followers/followers.component';
 import { PremiumComponent } from './components/premium/premium.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SidebarComponent,
-    NavbarComponent,
-    AboutComponent,
-    TrendingComponent,
-    PostsComponent,
-    ActionsComponent,
-    FollowersComponent,
-    PremiumComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        SidebarComponent,
+        NavbarComponent,
+        AboutComponent,
+        TrendingComponent,
+        PostsComponent,
+        ActionsComponent,
+        FollowersComponent,
+        PremiumComponent
+    ],
+    imports: [
+        BrowserModule,
+        HttpClientModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

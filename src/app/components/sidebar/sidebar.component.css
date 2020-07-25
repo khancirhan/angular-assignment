@@ -8,6 +8,7 @@
   border-radius: 1.6rem;
   min-height: 90vh;
   z-index: 999;
+  transition: all 0.3s ease;
 }
 
 .sidebar .sidebar-list {
@@ -38,5 +39,9 @@
 @media(max-width: 992px) {
   .sidebar {
     margin-left: -7rem;
+  }
+
+  .sidebar.show {
+    margin-left: 0;
   }
 }

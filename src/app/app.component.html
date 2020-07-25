@@ -1,9 +1,9 @@
 <div class="container">
-  <app-sidebar></app-sidebar>
+  <app-sidebar [isSidebarOpen]="isSideBarOpen"></app-sidebar>
 
-  <section class="main-wrapper">
+  <section class="main-wrapper" [class.show]="isSideBarOpen">
 
-    <app-navbar></app-navbar>
+    <app-navbar (toggleMenu)="onToggle()"></app-navbar>
 
     <main class="content-wrapper">
 
