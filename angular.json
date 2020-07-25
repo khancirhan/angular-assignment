@@ -24,11 +24,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/fontawesome/all.min.css"
             ],
-            "scripts": [
-              "src/assets/fontawesome/all.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
