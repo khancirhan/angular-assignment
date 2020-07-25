@@ -1,0 +1,22 @@
+/* ********************************************************** */
+/* Premium Section */
+/* ********************************************************** */
+.premium {
+  background-image: url("src/assets/img/globe.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem;
+}
+
+.premium .card {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.premium .card .card-para {
+  margin: 1.5rem 3rem 1rem;
+  line-height: 1.9;
+  font-weight: 300;
+}

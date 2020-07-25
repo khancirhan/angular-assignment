@@ -1,0 +1,119 @@
+/* ********************************************************** */
+/* Navbar */
+/* ********************************************************** */
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.navbar .menu-btn {
+  color: var(--primary);
+  font-size: 1.4rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+.navbar .menu-btn:hover {
+  transform: rotate(180deg);
+}
+
+.navbar .search-form {
+  position: relative;
+}
+
+.navbar .search-form .search-bar {
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 18px;
+  border: none;
+  background-color: var(--secondary);
+  padding: 1rem 1.5rem 1rem 3.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  width: 400px;
+}
+
+.navbar .search-form .search-icon {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+
+.navbar .nav-list {
+  list-style: none;
+  margin-left: auto;
+}
+
+.navbar .nav-list .nav-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1.5rem;
+}
+
+.navbar .nav-list .nav-item .bell-icon {
+  margin-right: 8px;
+}
+
+.navbar .nav-list .nav-item .nav-link {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.navbar .nav-list .nav-item .profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar .nav-list .nav-item .profile .profile-name {
+  color: #ddd;
+  text-align: right;
+  font-size: 0.7rem;
+}
+
+.navbar .nav-list .nav-item .profile .profile-img {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border: 2px solid var(--muted);
+  border-radius: 100%;
+  margin-left: 0.6rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media(max-width: 768px) {
+  .navbar .search-form .search-bar {
+    width: 220px;
+  }
+
+  .navbar .nav-list .nav-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1rem;
+  }
+
+  .navbar .nav-list .nav-item .bell-icon {
+    margin-right: 3px;
+  }
+
+}
+
+@media(max-width: 992px) {
+  .navbar .menu-btn {
+    display: block;
+  }
+
+  .navbar .search-form .search-bar {
+    width: 300px;
+  }
+}

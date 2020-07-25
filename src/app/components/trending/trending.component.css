@@ -1,0 +1,59 @@
+/* ********************************************************** */
+/* Trending Section */
+/* ********************************************************** */
+.trending {
+  margin-bottom: 2rem;
+}
+
+.trending .trending-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1.5rem;
+}
+
+.trending .trending-items .trending-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.trending .trending-items .trending-para {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.trending .trending-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trending .trending-footer .user-img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border: 1px solid var(--light);
+  border-radius: 100%;
+  margin-left: -12px;
+}
+
+.trending .trending-footer .user-img:first-child {
+  margin-left: 0 !important;
+}
+
+.trending .trending-footer .like-icon {
+  font-size: 1.3rem;
+  margin-right: 0.3rem;
+  cursor: pointer;
+}
+
+@media(max-width: 992px) {
+  .trending .trending-items {
+    grid-template-columns: 1fr;
+  }
+
+  .trending .trending-items .card {
+    margin-bottom: 1rem;
+  }
+}

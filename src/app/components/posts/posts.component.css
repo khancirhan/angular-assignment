@@ -1,0 +1,15 @@
+/* ********************************************************** */
+/* Posts Section */
+/* ********************************************************** */
+.posts .filter-form label {
+  font-weight: 300;
+}
+
+.posts .filter-form .form-control {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.4rem 0.5rem;
+  outline: none;
+  margin-left: 10px;
+  background: transparent;
+}
