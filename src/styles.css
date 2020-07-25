@@ -1,1 +1,155 @@
+/* ********************************************************** */
+/* Common Styling */
+/* ********************************************************** */
+*,
+*::after,
+*::after {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+:root {
+  --primary: #161616;
+  --secondary: #f2f2f2;
+  --light: #ffffff;
+  --muted: #777;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+.btn {
+  background: transparent;
+  outline: none !important;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-header .section-side-text {
+  color: var(--muted);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.bg-primary {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.bg-light {
+  background-color: var(--light);
+  color: var(--primary);
+}
+
+.bg-oranged {
+  background-color: #ffe7ca;
+}
+
+.bg-bluish {
+  background-color: #d8dcfb;
+}
+
+.bg-grayish {
+  background-color: #d2d2d2;
+}
+
+.card {
+  border-radius: 2rem;
+}
+
+.card .card-body {
+  padding: 1.8rem 1.5rem;
+}
+
+.table {
+  background-color: #f9f9f9;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table tr {
+  border-bottom: 1px solid var(--light);
+}
+
+.table tr:last-child {
+  border: none;
+}
+
+.table tr th,
+.table tr td {
+  padding: 0.8rem 1.4rem;
+}
+
+.table tr th {
+  background-color: var(--secondary);
+  border-right: 1px solid #ddd;
+  font-weight: 400;
+  text-align: left;
+}
+
+.table tr td {
+  border-right: 1px solid #aaa;
+  font-size: 0.9rem;
+}
+
+.table tr:hover td {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.table tr th:last-child,
+.table tr td:last-child {
+  border: none;
+}
+
+.table tr:first-child th:first-child {
+  border-top-left-radius: 1rem;
+}
+
+.table tr:first-child th:last-child {
+  border-top-right-radius: 1rem;
+}
+
+.table tr:last-child td:first-child {
+  border-bottom-left-radius: 1rem;
+}
+
+.table tr:last-child td:last-child {
+  border-bottom-right-radius: 1rem;
+}
